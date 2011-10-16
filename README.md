@@ -40,9 +40,9 @@ a given url.
         $oembed->setURL('http://www.flickr.com/photos/24887479@N06/2656764466/');
 
         // optional, if not provided it will be generated dynamically
-        $oembed->setOption(Omlex\OEmbed::OPTION_API, 'http://www.flickr.com/services/oembed/');
+        $oembed->setOption(\Omlex\OEmbed::OPTION_API, 'http://www.flickr.com/services/oembed/');
 
-        $object = $ombed->getObject();
+        $object = $oembed->getObject();
 
         //echo $object->__toString();
         ...
