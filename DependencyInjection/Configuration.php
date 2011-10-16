@@ -23,6 +23,23 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('ewz_omlex');
 
+        $rootNode
+            ->children()
+                ->arrayNode('providers')
+                    ->addDefaultsIfNotSet()
+                    ->canBeUnset()
+                    ->children()
+                        ->scalarNode('endpoint')->end()
+                        ->arrayNode('schemes')
+                            ->prototype('array')->end()
+                        ->end()
+                        ->scalarNode('url')->end()
+                        ->scalarNode('name')->end()
+                    ->end()
+                ->end()
+            ->end()
+        ;
+
         return $treeBuilder;
     }
 }

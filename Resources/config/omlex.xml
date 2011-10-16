@@ -9,6 +9,10 @@
     </parameters>
 
     <services>
-        <service id="omlex.oembed" class="%omlex.oembed.class%" />
+        <service id="omlex.oembed" class="%omlex.oembed.class%">
+            <argument key="url">null</argument>
+            <argument key="endpoint">null</argument>
+            <argument key="providers" type="collection"/>
+        </service>
     </services>
 </container>

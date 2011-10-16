@@ -25,5 +25,9 @@ class EWZOmlexExtension extends Extension
 
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
+
+        if (isset($config['providers'])) {
+            $container->getDefinition('omlex.oembed')->replaceArgument(2, $config['providers']);
+        }
     }
 }
