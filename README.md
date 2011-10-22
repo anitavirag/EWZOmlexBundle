@@ -137,7 +137,7 @@ $providers = array(
 );
 
 // load service
-$oembed = $this->get('omlex.oembed');
+$oembed = $this->get('ewz_omlex.oembed');
 $oembed->setURL($url, $enpoint, $providers);
 
 $object = $oembed->getObject();
