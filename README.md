@@ -15,7 +15,7 @@ add the following entries to the `deps` in the root of your project file:
 ```
 [EWZTimeBundle]
     git=http://github.com/excelwebzone/EWZOmlexBundle.git
-    target=/bundles/EWZ/Bundle/EWZOmlexBundle
+    target=/bundles/EWZ/Bundle/OmlexBundle
 
 ; Dependency:
 ;-----------
@@ -45,7 +45,7 @@ Next, add the necessary submodules:
 
 ``` bash
 $ git submodule add git://github.com/excelwebzone/Omlex.git vendor/omlex
-$ git submodule add git://github.com/excelwebzone/EWZOmlexBundle.git vendor/bundles/EWZ/Bundle/EWZOmlexBundle
+$ git submodule add git://github.com/excelwebzone/EWZOmlexBundle.git vendor/bundles/EWZ/Bundle/OmlexBundle
 ```
 
 ### Step2: Configure the autoloader
