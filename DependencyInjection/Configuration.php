@@ -23,7 +23,6 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->arrayNode('providers')
-                    ->addDefaultsIfNotSet()
                     ->canBeUnset()
                     ->prototype('array')
                     ->children()
