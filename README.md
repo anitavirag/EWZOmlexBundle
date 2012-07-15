@@ -133,7 +133,7 @@ $providers = array(
         ),
         'url'      => 'http://qik.com',
         'name'     => 'Qik'
-    ),            
+    ),
 );
 
 // load service
