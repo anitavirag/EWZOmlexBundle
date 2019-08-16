@@ -1,0 +1,7 @@
+services:
+    ewz_omlex.oembed:
+        class: Omlex\OEmbed
+        arguments:
+            url: null
+            endpoint: null
+            providers: {}
