@@ -9,21 +9,7 @@ Open a command console, enter your project directory and run the following
 command to download the latest stable version of this bundle:
 
 ```
-composer require --dev excelwebzone/omlex-bundle
-```
-
-Next you will need to enable the bundle in your AppKernel class:
-
-
-``` php
-// app/AppKernel.php
-
-// ...
-// registerBundles()
-if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
-    // ...
-    $bundles[] = new EWZ\Bundle\OmlexBundle\EWZOmlexBundle();
-}
+composer require excelwebzone/omlex-bundle
 ```
 
 Congratulations! You're ready!
